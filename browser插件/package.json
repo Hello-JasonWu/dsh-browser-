@@ -1,0 +1,33 @@
+{
+  "name": "dsh-browse",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Drive your locally installed Chrome from an AI agent: open pages, read them, click, type, screenshot, and capture the XHR/JSON behind a page. Zero dependencies.",
+  "bin": {
+    "browse": "./browse.mjs"
+  },
+  "main": "./browse.mjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "browse.mjs",
+    "lib",
+    "plugin"
+  ],
+  "scripts": {
+    "browse": "node browse.mjs",
+    "test": "node plugin/test-local.mjs",
+    "test:live": "node plugin/test-local.mjs --live"
+  },
+  "keywords": [
+    "chrome",
+    "cdp",
+    "devtools-protocol",
+    "browser-automation",
+    "headless",
+    "agent",
+    "deepseek-harness"
+  ]
+}
